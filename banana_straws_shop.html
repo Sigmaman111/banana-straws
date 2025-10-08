@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barratt's Banana Flavour Straws</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #fffaf0;
+      color: #333;
+    }
+    header {
+      background-color: #ffd84d;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 60px;
+      border-radius: 8px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #3a2c00;
+    }
+    .cart-button {
+      background-color: #3a2c00;
+      color: #ffd84d;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+    .cart-button:hover {
+      background-color: #5a4100;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .product img {
+      width: 100%;
+      max-width: 400px;
+      object-fit: cover;
+    }
+    .details {
+      flex: 1;
+      padding: 20px;
+    }
+    .details h2 {
+      margin-top: 0;
+      color: #3a2c00;
+    }
+    .price {
+      font-size: 1.5em;
+      color: #e6b800;
+      margin: 10px 0;
+    }
+    button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      color: #3a2c00;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e6b800;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffd84d;
+      color: #3a2c00;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+    }
+    .view-cart {
+      display: block;
+      text-align: center;
+      margin: 40px auto 0;
+      width: fit-content;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Barratt's Logo">
+    <h1>Barratt's Banana Flavour Straws</h1>
+    <button class="cart-button" onclick="window.location.href='cart.html'">🛒 Cart</button>
+  </header>
+
+  <main>
+    <section class="product">
+      <img src="banana-straw.jpg" alt="Barratt's Banana Flavour Straw">
+      <div class="details">
+        <h2>Barratt's Banana Flavour Straw</h2>
+        <p>Deliciously sweet and fruity banana-flavoured straws from Barratt’s classic confectionery line. Perfect for parties, nostalgia lovers, or anyone with a sweet tooth.</p>
+        <p class="price">£1.49 / pack</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+
+    <section>
+      <h3>About Our Sweets</h3>
+      <p>We proudly source authentic Barratt confectionery, ensuring every bite brings the unmistakable taste of classic British sweets. Whether you’re stocking up for a special occasion or indulging yourself, our banana straws are a delightful choice.</p>
+    </section>
+
+    <a href="add.html" class="view-cart"><button>View Add</button></a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Barratt Straw Co. | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
